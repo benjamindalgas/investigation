@@ -1,0 +1,266 @@
+.innerdiv {
+    position:relative;
+    font-size: 300%;
+    width: 30%;
+    margin: auto;
+    font-family: 'Calligraffitti', cursive;
+    color: white;
+    
+}
+
+.center{
+  margin: auto;
+  width: 30%;
+}
+
+.button-0 {
+  position: relative;
+  display:inline-block;
+    padding: 5px 10px;
+    border: 10px;
+    font-family: 'Helvetica', cursive;
+    font-size: 150%;
+    color: black;
+    text-decoration: none;  
+    background-color: white;
+    border: 2px solid black;
+    transition: .3s;
+    border-radius: 10px;
+}
+
+.button-0:hover, 
+.button-0:focus {
+    text-decoration: none;
+    color: #d8d8b7;
+  font-size: 150%;
+  background-color: black; 
+  transition:.5s;
+  border-radius: 10px;
+}
+
+.button-0:active {
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 0px solid;
+    border-radius: 10px;
+}
+
+.fade {
+
+    -webkit-animation: fadein 30s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 30s; /* Firefox < 16 */
+       -ms-animation: fadein 30s; /* Internet Explorer */
+         -o-animation: fadein 30s; /* Opera < 12.1 */
+            animation: fadein 30s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+/* imported from matchwords by Ryan Mark Phillips */
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    font-size: 45px;
+    font-weight:400;
+}
+
+.title{
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+    font-size: 45px;
+    color:white;
+    width: 30%;
+  
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    background-color: black;
+    color:white;
+    margin-left:10px;
+}
+
+#grid{
+    margin-top:15px;
+}
+
+#timer{
+    position:absolute;
+    top:10px;
+    right:10px;
+    font-size: 30px;
+}
+
+.grid{
+    color: #666;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    line-height: 50px;
+    float: none;
+    width: 320px;
+    height: 50px;
+    margin: 0px 10px 10px 0px;
+    padding: 10px;
+    border: 2px solid #999;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px #aaa;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.error{
+    background-color: #faa;
+}
+
+.grid:hover{
+    border: 1px solid #000;
+    box-shadow: 0px 4px 11px #666;
+    color: #000;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.grid:active{
+    background-color: rgba(255,255,255, 1);
+    border: 1px solid #999;
+    cursor: pointer;
+    box-shadow: 0px 4px 9px #ccc;
+}
+
+.selected{
+    color: #fff;
+    text-shadow: 0px 0px 2px #000;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.selected:hover{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.complete{
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 0px 0px 2px #000;
+}
+
+.complete:hover{
+    color: #fff;
+    cursor: default;
+    font-weight: 600;
+}
+
+
+input { font-size: 18px; 
+  font-family: 'Open Sans', sans-serif;
+  width: 100px;
+}
+
+.scoreboard1{
+  position: relative;
+  width:100px;
+  height:40px;
+  color:black;
+  background-color:gray;
+   border-top: 2px white solid;
+  left:0px;
+  top:0px;
+  padding: 0px;
+  text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.scoreboard2{
+  position: relative;
+  width:100px;
+  height:42px;
+  color:black;
+  background-color:gray;
+  border-bottom: 2px white solid;
+  right:0px;
+  top:0px;
+  padding:0px;
+  text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.scoregadget{
+  position:fixed;
+  width:300px
+  height:100px;
+  border: solid white 5px;
+  top:0px;
+  right:60px;
+  text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+     border-radius: 1px;
+}
+
+.dialog{
+  background: #FFF;
+  width: 500px;
+  height:500px;
+  font-size: 45px;
+  text-align: center;
+  padding: 1.5em;
+  margin: 1em auto;
+  border: 0;
+  border-top: 5px solid #69c773;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.8);
+}
+
+.dialog::backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dialogsmall{
+  background: #FFF;
+  width: 500px;
+  height:500px;
+  font-size: 20px;
+  text-align: center;
+  padding: 1.5em;
+  margin: 1em auto;
+  border: 0;
+  border-top: 5px solid #69c773;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.8);
+}
+
+.dialogsmall::backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+.testinfo{
+  position:fixed;
+  font:white;
+  border: 5px white solid;
+  right:10px;
+  bottom:10px;
+}

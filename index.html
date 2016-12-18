@@ -1,0 +1,59 @@
+<!--To Do: 
+- create a highlighter for Key Vocab or AWL words so that on second read, these are discussed
+- Fix the cointoss to be more visual with an actual coin and the name of the player on the top of the coin.
+Future Improvements:
+- create a formatter for the article
+- Deeper Questions with Score
+- Points and Score Submitter
+-->
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Investigations</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
+   <script type="text/javascript" src="script.js"></script> 
+
+     
+</head>
+
+<body>
+<br>
+<div id="storyname" class="title"></div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <form class="center">
+  Player 1: <br><input id="player1entry"></input>
+  <br><p></p>
+  Player 2: <br><input id="player2entry"></input>
+  </form>
+  <br>
+  <div class="center"><a href="page2video.html" id="checkbtn" onclick="playernames()" class="button-0  ">Begin</a>
+</div>
+  <br>
+
+<script>
+// This is the session storage variables used throughout the game
+sessionStorage.turns = 0;
+sessionStorage.play1score = 0;
+sessionStorage.play2score = 0;
+sessionStorage.teamcurrent = 0;
+
+//This loads all the elements from the storycreator.  for title page
+
+function stitle()
+{document.getElementById("storyname").innerHTML = storytitle;}
+
+window.onload = stitle();
+
+
+
+</script>
+
+</body>
+</html>

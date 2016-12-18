@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+        <!-- proj specific -->
+        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="matchwords.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        
+       
+    </head>
+    <body>
+      
+      
+      <!-- This is the topgadget for score that goes with every page-->
+<div id="scoregadget"  class="scoregadget">
+
+<div style="text-align: center; font-weight:bold;" >Team Score:</div><div class="center" id="teamscore"></div>
+<div id="scoreboard1" class="scoreboard1">
+<span style="text-align: center; font-weight:bold;"><span id="player1display"></span>:</span>
+<span style="text-align: left;"></span></span><span id="player1score"></span><br>
+</div>
+
+<div id="scoreboard2" class="scoreboard2">
+<span style="text-align: center; font-weight: bold;"><span id="player2display"></span>:</span><span id="player2score"></span><br>
+</div>
+</div>
+<!--end top gadget-->
+
+
+
+
+        <h1>Matching!</h1>
+        <div id="timer">0</div>     
+        <p>Match a word and it's <br>definition by selecting tiles. </p>
+        <div id="grid"></div>
+        
+      
+      
+      <div id="demo"></div>
+        
+<!--dialogs-->
+        <dialog class="dialog" id="player1dialog"><span id="player3display"></span> Ready?<br><br><button onclick="closed()">Yes!</button></dialog>
+        <dialog class="dialog" id="player2dialog"><span id="player4display"></span> Ready?<br><br><button onclick="closed()">Yes!</button></dialog>
+        <dialog class="dialog" id="endmatchgame"><span id="player1display"></span>Team Score:<span id="finalscore"></span><br><br><button onclick="closed()">OK</button></dialog>
+        
+    </body>
+     <!-- posts players names -->
+        <script>
+        window.onload = postplayernames();
+        </script>
+        
+</html>
